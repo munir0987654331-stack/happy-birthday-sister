@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#FFD3E0"/>
+  <text x="50%" y="48%" font-family="sans-serif" font-size="20" fill="#4A2545" text-anchor="middle">📷 add a photo</text>
+  <text x="50%" y="58%" font-family="sans-serif" font-size="14" fill="#7A4E70" text-anchor="middle">images/memory1.jpg etc.</text>
+</svg>

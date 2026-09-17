@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Sister!</title>
+
+  <!-- Google Fonts: Baloo 2 (headings) + Quicksand (body text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======================================================
+       Floating background decorations (balloons / stars / hearts)
+       These are purely decorative and drift slowly on their own.
+       You can add/remove <span> lines to change how many there are.
+  ======================================================= -->
+  <div class="bg-decor" id="bgDecor" aria-hidden="true">
+    <span class="decor balloon" style="left:6%; animation-delay:0s;">🎈</span>
+    <span class="decor balloon" style="left:80%; animation-delay:2s;">🎈</span>
+    <span class="decor balloon" style="left:45%; animation-delay:4s;">🎈</span>
+    <span class="decor star" style="left:20%; animation-delay:1s;">✨</span>
+    <span class="decor star" style="left:65%; animation-delay:3s;">⭐</span>
+    <span class="decor star" style="left:90%; animation-delay:0.5s;">✨</span>
+    <span class="decor heart" style="left:12%; animation-delay:2.5s;">💗</span>
+    <span class="decor heart" style="left:72%; animation-delay:1.5s;">💕</span>
+  </div>
+
+  <!-- ======================================================
+       HERO SECTION
+       ✏️ EDIT HERE: change "Sister" to her name, and tweak
+       the welcome message however you like.
+  ======================================================= -->
+  <header class="hero">
+    <div class="hero-content">
+      <p class="hero-kicker">a very unnecessary website made just for</p>
+      <h1 class="hero-title">
+        Happy Birthday,<br />
+        <span class="hero-name">Sister</span>! 🎂❤️
+      </h1>
+      <p class="hero-sub">
+        <!-- ✏️ EDIT HERE: your funny welcome message -->
+        Warning: this page contains excessive love, mild roasting, and at
+        least one embarrassing truth. Proceed at your own risk.
+      </p>
+      <button class="celebrate-btn" id="celebrateBtn">
+        Celebrate 🎉
+      </button>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">↓ keep scrolling, drama queen ↓</div>
+  </header>
+
+  <!-- ======================================================
+       MESSAGES SECTION
+       ✏️ EDIT HERE: this is the big list of short messages.
+       Each <div class="msg-card"> is ONE message.
+       - Change the emoji in <span class="msg-tag">
+       - Change the text inside <p>
+       - Copy/paste a whole .msg-card block to add more,
+         or delete one to have fewer.
+  ======================================================= -->
+  <section class="section messages-section" id="messages">
+    <h2 class="section-title">Things I'd Only Say Because It's Your Birthday</h2>
+    <p class="section-sub">(you're welcome, and also I'm sorry)</p>
+
+    <div class="msg-grid">
+      <div class="msg-card"><span class="msg-tag">😤</span><p>You are, scientifically, the most dramatic person I have ever met. And somehow I still called you first.</p></div>
+      <div class="msg-card"><span class="msg-tag">🥹</span><p>You've annoyed me more than anyone on this planet, and I would still fight anyone who tried it themselves.</p></div>
+      <div class="msg-card"><span class="msg-tag">🙄</span><p>You cry during commercials, overreact to everything, and somehow I still think you're the strongest person I know.</p></div>
+      <div class="msg-card"><span class="msg-tag">😂</span><p>Half of my personality is just impressions of you losing it over something small. Never change.</p></div>
+      <div class="msg-card"><span class="msg-tag">❤️</span><p>You're the only person who can make me laugh and want to lock myself in a room, sometimes in the same sentence.</p></div>
+      <div class="msg-card"><span class="msg-tag">🤡</span><p>You're a little chaotic, a little unhinged, and somehow still the most reliable person in my life.</p></div>
+      <div class="msg-card"><span class="msg-tag">🫶</span><p>I don't say it enough, but I genuinely don't know what I'd do without your loud, weird, comforting presence.</p></div>
+      <div class="msg-card"><span class="msg-tag">😩</span><p>You take three years to reply to texts but somehow show up in five minutes when it actually matters. How.</p></div>
+      <div class="msg-card"><span class="msg-tag">🥰</span><p>You're proof that someone can be a little crazy and still be the safest place I know.</p></div>
+      <div class="msg-card"><span class="msg-tag">😹</span><p>I will never admit this again, but I actually miss you when it's been too long. Don't let it get to your head.</p></div>
+      <div class="msg-card"><span class="msg-tag">🙃</span><p>You overthink everything, argue about nothing, and I still trust your opinion more than most people's.</p></div>
+      <div class="msg-card"><span class="msg-tag">💌</span><p>Being your sibling has been chaotic, loud, and occasionally exhausting. It's also the best part of my life.</p></div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       MEMORIES SECTION
+       ✏️ EDIT HERE: replace the images inside /images/ with
+       real photos of you two. Keep the file names the same
+       (memory1.jpg, memory2.jpg, ...) or update the "src"
+       below to match whatever you rename them to.
+       You can also edit the little caption under each photo.
+  ======================================================= -->
+  <section class="section memories-section" id="memories">
+    <h2 class="section-title">Our Memories</h2>
+    <p class="section-sub">a few of my favorite proofs that we survived each other</p>
+
+    <div class="memories-grid">
+      <figure class="polaroid">
+        <img src="memory1.jpg" alt="A memory of us" onerror="this.src='placeholder.svg'" />
+        <figcaption>✏️ caption 1</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="memory2.jpg" alt="A memory of us" onerror="this.src='placeholder.svg'" />
+        <figcaption>✏️ caption 2</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="memory3.jpg" alt="A memory of us" onerror="this.src='placeholder.svg'" />
+        <figcaption>✏️ caption 3</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="memory4.jpg" alt="A memory of us" onerror="this.src='placeholder.svg'" />
+        <figcaption>✏️ caption 4</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       CAKE CUTTING SECTION (interactive)
+       Nothing to edit here unless you want to change the
+       text lines below — the cake itself is drawn with CSS.
+  ======================================================= -->
+  <section class="section cake-section" id="cake-section">
+    <h2 class="section-title">One More Year Older</h2>
+    <p class="section-sub">go on, do the honors</p>
+
+    <div class="cake-stage">
+      <div class="cake" id="cake">
+        <div class="candle">
+          <div class="flame" id="flame"></div>
+        </div>
+        <div class="cake-top"></div>
+        <div class="cake-drip"></div>
+        <div class="cake-layer top-layer" id="topLayer"></div>
+        <div class="cake-layer bottom-layer" id="bottomLayer"></div>
+        <div class="knife" id="knife">🔪</div>
+      </div>
+      <div class="plate"></div>
+    </div>
+
+    <button class="cut-btn" id="cutBtn">Cut the cake 🍰</button>
+    <p class="cake-result" id="cakeResult"></p>
+  </section>
+
+  <!-- ======================================================
+       SECRET MESSAGE SECTION
+       ✏️ EDIT HERE: this is your real, heartfelt message.
+       It stays hidden until she clicks/taps the envelope.
+  ======================================================= -->
+  <section class="section secret-section" id="secret">
+    <h2 class="section-title">One Last Thing</h2>
+    <p class="section-sub">this one isn't a joke. tap it.</p>
+
+    <div class="envelope" id="envelope" tabindex="0" role="button" aria-label="Open the secret birthday message">
+      <div class="envelope-back"></div>
+      <div class="envelope-flap"></div>
+      <div class="envelope-letter" id="envelopeLetter">
+        <p>
+          <!-- ✏️ EDIT HERE: your real heartfelt secret message -->
+          Okay, being serious for one second: I tease you because it's fun,
+          not because it's all there is. You've been there for the messy,
+          unglamorous parts of my life without ever making me feel small
+          for needing you. I don't know who I'd be without you as my sibling,
+          and I hope this year gives you everything you deserve and then some.
+          I love you, weirdo. Happy birthday. 💗
+        </p>
+        <p class="signature">— your annoying sibling</p>
+      </div>
+      <div class="envelope-front"></div>
+      <div class="envelope-seal" id="envelopeSeal">💌</div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>made with love, sarcasm, and way too much CSS 🎈</p>
+  </footer>
+
+  <!-- Confetti canvas layer used by JavaScript -->
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
