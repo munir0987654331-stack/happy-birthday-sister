@@ -1,3 +1,9 @@
+Poora `index.html` code neeche hai — GitHub pe file khol kar, edit (pencil) icon dabao, saara purana code select karke delete karo, phir yeh **poora neeche wala code paste kar do**, aur commit kar do.
+
+⚠️ Paste karne se pehle bas ye 4 lines dhoondh k apna caption likh dena (Ctrl+F / "Find in page" se `caption` search kar sakti ho):
+`✏️ caption 1`, `✏️ caption 2`, `✏️ caption 3`, `✏️ caption 4`
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +11,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Happy Birthday, Sister!</title>
 
-  <!-- Google Fonts: Baloo 2 (headings) + Quicksand (body text) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,11 +19,6 @@
 </head>
 <body>
 
-  <!-- ======================================================
-       Floating background decorations (balloons / stars / hearts)
-       These are purely decorative and drift slowly on their own.
-       You can add/remove <span> lines to change how many there are.
-  ======================================================= -->
   <div class="bg-decor" id="bgDecor" aria-hidden="true">
     <span class="decor balloon" style="left:6%; animation-delay:0s;">🎈</span>
     <span class="decor balloon" style="left:80%; animation-delay:2s;">🎈</span>
@@ -30,11 +30,6 @@
     <span class="decor heart" style="left:72%; animation-delay:1.5s;">💕</span>
   </div>
 
-  <!-- ======================================================
-       HERO SECTION
-       ✏️ EDIT HERE: change "Sister" to her name, and tweak
-       the welcome message however you like.
-  ======================================================= -->
   <header class="hero">
     <div class="hero-content">
       <p class="hero-kicker">a very unnecessary website made just for</p>
@@ -43,7 +38,6 @@
         <span class="hero-name">Sister</span>! 🎂❤️
       </h1>
       <p class="hero-sub">
-        <!-- ✏️ EDIT HERE: your funny welcome message -->
         Warning: this page contains excessive love, mild roasting, and at
         least one embarrassing truth. Proceed at your own risk.
       </p>
@@ -54,15 +48,6 @@
     <div class="scroll-hint" aria-hidden="true">↓ keep scrolling, drama queen ↓</div>
   </header>
 
-  <!-- ======================================================
-       MESSAGES SECTION
-       ✏️ EDIT HERE: this is the big list of short messages.
-       Each <div class="msg-card"> is ONE message.
-       - Change the emoji in <span class="msg-tag">
-       - Change the text inside <p>
-       - Copy/paste a whole .msg-card block to add more,
-         or delete one to have fewer.
-  ======================================================= -->
   <section class="section messages-section" id="messages">
     <h2 class="section-title">Things I'd Only Say Because It's Your Birthday</h2>
     <p class="section-sub">(you're welcome, and also I'm sorry)</p>
@@ -83,14 +68,6 @@
     </div>
   </section>
 
-  <!-- ======================================================
-       MEMORIES SECTION
-       ✏️ EDIT HERE: replace the images inside /images/ with
-       real photos of you two. Keep the file names the same
-       (memory1.jpg, memory2.jpg, ...) or update the "src"
-       below to match whatever you rename them to.
-       You can also edit the little caption under each photo.
-  ======================================================= -->
   <section class="section memories-section" id="memories">
     <h2 class="section-title">Our Memories</h2>
     <p class="section-sub">a few of my favorite proofs that we survived each other</p>
@@ -115,11 +92,6 @@
     </div>
   </section>
 
-  <!-- ======================================================
-       CAKE CUTTING SECTION (interactive)
-       Nothing to edit here unless you want to change the
-       text lines below — the cake itself is drawn with CSS.
-  ======================================================= -->
   <section class="section cake-section" id="cake-section">
     <h2 class="section-title">One More Year Older</h2>
     <p class="section-sub">go on, do the honors</p>
@@ -142,11 +114,6 @@
     <p class="cake-result" id="cakeResult"></p>
   </section>
 
-  <!-- ======================================================
-       SECRET MESSAGE SECTION
-       ✏️ EDIT HERE: this is your real, heartfelt message.
-       It stays hidden until she clicks/taps the envelope.
-  ======================================================= -->
   <section class="section secret-section" id="secret">
     <h2 class="section-title">One Last Thing</h2>
     <p class="section-sub">this one isn't a joke. tap it.</p>
@@ -156,7 +123,6 @@
       <div class="envelope-flap"></div>
       <div class="envelope-letter" id="envelopeLetter">
         <p>
-          <!-- ✏️ EDIT HERE: your real heartfelt secret message -->
           Okay, being serious for one second: I tease you because it's fun,
           not because it's all there is. You've been there for the messy,
           unglamorous parts of my life without ever making me feel small
@@ -175,9 +141,11 @@
     <p>made with love, sarcasm, and way too much CSS 🎈</p>
   </footer>
 
-  <!-- Confetti canvas layer used by JavaScript -->
   <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
 
   <script src="script.js"></script>
 </body>
 </html>
+```
+
+Paste karke, sirf 4 caption lines change karo, phir **"Commit changes"** dabao.
